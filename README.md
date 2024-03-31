@@ -84,6 +84,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
     - *To fix this, we need to enable ICMPv4 on DC-1's local Windows firewall*
 
 <p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/20931f76-739c-4511-b784-237e8ec83d56"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/2c3a9298-cec6-4a55-9996-79d0f3861afa"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d0f69592-b926-46bb-a1eb-38e4fbb36554"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/4a4a9db9-1d7c-4bb9-9f63-93e3c65c2a73"><br>
+<p align="center">
 <img width="800" alt="isolated" src=""><br>
 
 ***
