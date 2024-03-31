@@ -160,7 +160,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Right-click: `mydomain.com > New > Select Oranizational Unit (OU)`
 
-- Create two OUs
+- <ins>Create 2 OUs</ins>:
 
   - Name the first: `_EMPLOYEES`
   - Name the second: `_ADMINS`
