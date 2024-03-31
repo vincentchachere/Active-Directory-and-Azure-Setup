@@ -52,7 +52,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
   - Name: `Client-1`
   - Image: `Windows 10 Pro`
-  - *Use the same resource group and vNet as DC-1*
+  - *Use the same resource group and VNET as DC-1*
 
 <p align="center">
 <img width="800" alt="isolated" src=""><br>
