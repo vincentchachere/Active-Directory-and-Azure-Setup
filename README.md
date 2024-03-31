@@ -31,7 +31,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - *Take note of the virtual network (VNET) that is automatically created*
  
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/ef8c0da4-6ad5-402e-808b-8d08c9ef4677"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/c9fab933-8d92-4ca2-9c05-2fc68e67a623"><br>
+
 
 *** 
 
@@ -44,7 +47,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Change the assignment from dynamic to: `static` *(This ensures DC-1's IP address will not change)*
 	   
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/83432706-4761-47a8-9872-c0ebb2581571"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/562dd2af-c9a7-4459-9371-bf7546dc2804"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/97a42386-e953-4c44-832c-d26703720b1c"><br>
+
 
 ***
 
@@ -55,7 +63,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - *Use the same resource group and VNET as DC-1*
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/ee1aa225-6024-4458-b2e7-6e3aae4af51a"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/1f475c96-0c5f-440a-b789-4af56d260459"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/1dde6b86-f0d3-4bcb-9706-91ac4fc5a308"><br>
 
 ***
 
