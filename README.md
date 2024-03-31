@@ -31,7 +31,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - *Take note of the virtual network (VNET) that is automatically created*
  
 <p align="center">
-<img src="https://i.imgur.com/mrpBWtM.png" height="70%" width="70%" alt="Azure Free Account"/>
+<img width="800" alt="isolated" src=""><br>
 
 *** 
 
@@ -44,8 +44,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Change the assignment from dynamic to: `static` *(This ensures DC-1's IP address will not change)*
 	   
 <p align="center">
-<img src="https://i.imgur.com/xcyLUOG.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/ZaWdzTl.png" height="70%" width="70%" alt="Azure Free Services"/>  <img src="https://i.imgur.com/Vn0UhWm.png" height="70%" width="70%" alt="Azure Free Services"/>
-</p>
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -56,7 +55,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Use the same resource group and vNet as DC-1
 
 <p align="center">
-<img src="https://i.imgur.com/Vf7yeY1.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/3DK41Cr.png" height="70%" width="70%" alt="Azure Free Services"/> 
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -73,7 +72,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
     - *To fix this, we need to enable ICMPv4 on DC-1's local Windows firewall*
 
 <p align="center">
-<img src="https://i.imgur.com/U6UOqj5.png" height="70%" width="70%" alt="Azure Free Account"/> 
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -84,15 +83,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Find and enable these two inbound rules: `Core Networking Diagnostics` and `ICMPv4`
 
 <p align="center">
-<img src="https://i.imgur.com/bw6eoLh.png" height="50%" width="50%" alt="Azure Free Account"/> <img src="https://i.imgur.com/BY1Ohgb.png" height="80%" width="80%" alt="Azure Free Services"/>
-</p>
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
 - Log back into: `Client-1` *(the command line will automatically begin pinging DC-1 successfully)*
     
 <p align="center">
-<img src="https://i.imgur.com/890WIJB.png" height="70%" width="70%" alt="Azure Free Account"/> 
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -108,8 +106,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - *Complete the installation*
 
 <p align="center">
-<img src="https://i.imgur.com/DQRVNnm.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/RpzngRi.png" height="50%" width="50%" alt="Azure Free Services"/>
-</p>
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -117,7 +114,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Select: `Promote This Server to a Domain Controller`
 
 <p align="center">
-<img src="https://i.imgur.com/GOYiTFe.png" height="70%" width="70%" alt="Azure Free Account"/> 
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -130,7 +127,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 
 <p align="center">
-<img src="https://i.imgur.com/IjfUZ0a.png" height="70%" width="70%" alt="Azure Free Account"/> 
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -139,8 +136,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Log back into DC-1 as user: `mydomain.com\labuser`
 
 <p align="center">
-<img src="https://i.imgur.com/oNp39DK.png" height="70%" width="70%" alt="Azure Free Account"/> 
-	
+<img width="800" alt="isolated" src=""><br>
+
 ***
 
 ### Step 4: Create an Admin and Normal User Account in Active Directory v1.15.8
@@ -150,17 +147,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Select Active Directory Users and Computers
 
 <p align="center">
-<img src="https://i.imgur.com/udGHbGs.png" height="70%" width="70%" alt="Azure Free Account"/> 
-	
+<img width="800" alt="isolated" src=""><br>
+
+***
+
 - Right-click mydomain.com > New > Select Oranizational Unit (OU)
 - Create two OUs
 	- Name the first "_EMPLOYEES"
 	- Name the second "_ADMINS"
 	
 <p align="center">
-<img src="https://i.imgur.com/5wSZuA4.png" height="70%" width="70%" alt="Azure Free Account"/> 
-	
-	
+<img width="800" alt="isolated" src=""><br>
+
+***
+
 - Right-click mydomain.com and click Referesh to sort the new organizational units to the top
 - Go to the _ADMINS OU
 - Right-click the name of the OU > New > User
@@ -170,9 +170,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
 	- Create a password
 	- Uncheck all boxes
 	- Select Next and then select Finish
+
 <p align="center">
-<img src="https://i.imgur.com/nv6jc9p.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/uLopQTZ.png" height="70%" width="70%" alt="Azure Free Account"/> 
-	
+<img width="800" alt="isolated" src=""><br>
+
+***
+
 - Go to the _ADMINS OU
 - Right-click Jane Doe > select Properties
 	- Click the tab named "Member of" > select Add
@@ -180,13 +183,10 @@ This tutorial outlines the implementation of on-premises Active Directory within
 	- Select "Check Names" > OK > Apply
 - Log out of DC-1 as "labuser" and log back in as “mydomain.com\jane_admin”
 
-
-
 <p align="center">
-<img src="https://i.imgur.com/EapMhBs.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/vGb8Kx8.png" height="70%" width="70%" alt="Azure Free Services"/>
-</p>
+<img width="800" alt="isolated" src=""><br>
  
-     
+***
 
 ### Step 5: Join Client-1 to your domain (mydomain.com)
 
@@ -199,8 +199,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - After it is done updating, select Restart and select Yes
 
 <p align="center">
-<img src="https://i.imgur.com/z6UesO7.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/bt0yK17.png" height="70%" width="70%" alt="Azure Free Services"/>  <img src="https://i.imgur.com/sB5edH5.png" height="70%" width="70%" alt="Azure Free Services"/>
-</p>
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -213,10 +212,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 	- Type in password and press OK
 - Restart the computer 			
 
-
 <p align="center">
-<img src="https://i.imgur.com/3HxJLpe.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/J8M4zBU.png" height="50%" width="50%" alt="Azure Free Services"/>
-</p>
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -230,10 +227,8 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Type in the name of your domain users
 - Select "Check Names" > OK > OK
 
- 
- <p align="center">
-<img src="https://i.imgur.com/HgAXVMX.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/0QDUk5l.png" height="60%" width="60%" alt="Azure Free Services"/>
-</p>
+<p align="center">
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -246,8 +241,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 	- You can find the script [here](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 
 <p align="center">
-<img src="https://i.imgur.com/MpvLIbB.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/V4vIvre.png" height="70%" width="70%" alt="Azure Free Services"/>
-</p>
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -259,14 +253,12 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Try logging into Client-1 as user "base.milu" using the password "Password1"
 
 <p align="center">
-<img src="https://i.imgur.com/3HN1Nf4.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/CeE8LGh.png" height="50%" width="50%" alt="Azure Free Services"/>  <img src="https://i.imgur.com/7ZVBp8a.png" height="70%" width="70%" alt="Azure Free Services"/>
-</p>
+<img width="800" alt="isolated" src=""><br>
 
 ***
 
 <p align="center">
-<img src="https://i.imgur.com/EzgHWRs.png" height="70%" width="70%" alt="Azure Free Account"/> <img src="https://i.imgur.com/hYFodxu.png" height="70%" width="70%" alt="Azure Free Services"/>
-</p>
+<img width="800" alt="isolated" src=""><br>
 
 
 
