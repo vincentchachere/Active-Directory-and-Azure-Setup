@@ -18,8 +18,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Windows Server 2022
 - Windows 10 (21H2)
 
-
-
 ## Deployment and Configuration Steps
 
 ### Step 1: Setup Resources in Azure
@@ -64,15 +62,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ### Step 2: Ensure Connectivity Between the Client and Domain Controller
 
-- Login to Client-1 using Microsoft Remote Desktop
+- Login to: `Client-1 using Microsoft Remote Desktop`
 
-- Search for Command Prompt and open it
+- Search: `Command Prompt` and open it
 
-- Ping DC-1's private IP Address (for example, 10.1.0.4)
+- Ping: `DC-1's private IP Address` (for example, 10.1.0.4)
 
   - Type: `ping -t 10.1.0.4` into the command-line interface
-  - The ping request continually  times out due to the firewall settings
-  - To fix this, we need to enable ICMPv4 on DC-1's local Windows firewall
+    - *The ping request continually  times out due to the firewall settings*
+    - *To fix this, we need to enable ICMPv4 on DC-1's local Windows firewall*
 
 <p align="center">
 <img src="https://i.imgur.com/U6UOqj5.png" height="70%" width="70%" alt="Azure Free Account"/> 
@@ -81,9 +79,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Login to DC-1 using Microsoft Remote Desktop
 
-  - Start > Windows Administrative Tools > Windows Defender Firewall with Advanced Security > Inbound Rules
-  - Sort the list by protocols
-  - Find "Core Networking Diagnostics" and "ICMPv4" and enable these two inbound rules
+  - Go To: `Start > Windows Administrative Tools > Windows Defender Firewall with Advanced Security > Inbound Rules`
+  - Sort the list by: `protocols`
+  - Find and enable these two inbound rules: `Core Networking Diagnostics` and `ICMPv4`
 
 <p align="center">
 <img src="https://i.imgur.com/bw6eoLh.png" height="50%" width="50%" alt="Azure Free Account"/> <img src="https://i.imgur.com/BY1Ohgb.png" height="80%" width="80%" alt="Azure Free Services"/>
@@ -91,7 +89,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ***
 
-- Log back into Client-1 and the command line will automatically begin pinging DC-1 successfully
+- Log back into: `Client-1` *(the command line will automatically begin pinging DC-1 successfully)*
     
 <p align="center">
 <img src="https://i.imgur.com/890WIJB.png" height="70%" width="70%" alt="Azure Free Account"/> 
@@ -100,14 +98,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ### Step 3: Install Active Directory
 
-- Log back into DC-1
+- Log back into: `DC-1`
 
-  - Open Server Manager
-  - Select "Add Roles and Features" > Follow the prompts
-  - At Server Roles, check "Active Directory Domain Services."
-    - Ignore how the picture below already says "Installed"
-  - Select Add Features > select Next
-  - Complete the installation
+  - Open: `Server Manager`
+  - Select: `Add Roles and Features > Follow the prompts`
+  - At Server Roles, check: `Active Directory Domain Services`
+    - *Ignore how the picture below already says "Installed"*
+  - Select: `Add Features > select Next`
+  - *Complete the installation*
 
 <p align="center">
 <img src="https://i.imgur.com/DQRVNnm.png" height="80%" width="80%" alt="Azure Free Account"/> <img src="https://i.imgur.com/RpzngRi.png" height="50%" width="50%" alt="Azure Free Services"/>
@@ -115,20 +113,20 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ***
 
-- At the top right of the Server Manager Dashboard, click on the flag
-- Select "Promote This Server to a Domain Controller"
+- At the top right of the Server Manager Dashboard, click on: `the flag`
+- Select: `Promote This Server to a Domain Controller`
 
 <p align="center">
 <img src="https://i.imgur.com/GOYiTFe.png" height="70%" width="70%" alt="Azure Free Account"/> 
 
 ***
- 
- - Select "Add a New Forest"
- 	- Root domain name: mydomain.com
-- Select Next
-- Create a password
-- Select Next and follow the prompts
-- Select Install to complete the installation
+
+- Select: `Add a New Forest`
+- Root domain name: `mydomain.com`
+- Select: `Next`
+- Create: `a password`
+- Select: `Next` and follow the prompts
+- Select: `Install` to complete the installation
 
 
 <p align="center">
@@ -136,8 +134,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ***
 
-- DC-1 will automatically restart
-- Log back into DC-1 as user: mydomain.com\labuser               
+- *DC-1 will automatically restart*
+
+- Log back into DC-1 as user: `mydomain.com\labuser`
 
 <p align="center">
 <img src="https://i.imgur.com/oNp39DK.png" height="70%" width="70%" alt="Azure Free Account"/> 
