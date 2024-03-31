@@ -22,7 +22,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ### Step 1: Setup Resources in Azure
 
-<ins>Create two virtual machines</ins>
+<ins>Create 2 virtual machines</ins>
 - If you need help creating your virtual machines, please see my tutorial [here](https://github.com/roslyndwilliams/virtual-machine)
 
 - The first virtual machine will be the Domain Controller
