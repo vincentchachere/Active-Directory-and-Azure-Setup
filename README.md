@@ -215,9 +215,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Right-click the name of the OU > New > User
 
-  - First/Last name: Jane Doe
+  - First/Last name: `Jane Doe`
 
-  - User login name: jane_admin
+  - User login name:`jane_admin`
 
   - Select: `Next`
 
@@ -292,7 +292,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
   - Username: mydomain.com\jane_admin
 
-  - Type in password and press OK
+  - Type in: *`password`*
+
+  - Press: `OK`
 
 - Restart the computer			
 
