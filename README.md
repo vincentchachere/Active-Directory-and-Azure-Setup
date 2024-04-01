@@ -26,8 +26,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - If you need help creating your virtual machines, please see my tutorial [here](https://github.com/roslyndwilliams/virtual-machine)
 
 - The first virtual machine will be the Domain Controller
+
   - Name: `DC-1`
+
   - Image: `Windows Server 2022`
+
   - *Take note of the virtual network (VNET) that is automatically created*
  
 <p align="center">
@@ -41,9 +44,13 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Set DC-1's Virtual Network Interface Card (vNIC) private IP address to be static
 
   - Go to: `DC-1's network settings`
+
   - Select: `Networking`
+
   - Select: `the link next to Network Interface`
+
   - Select: `IP Configurations > ipconfig1`
+
   - Change the assignment from dynamic to: `static` *(This ensures DC-1's IP address will not change)*
 	   
 <p align="center">
@@ -59,7 +66,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - The second virtual machine will be the Clients
 
   - Name: `Client-1`
+
   - Image: `Windows 10 Pro`
+
   - *Use the same resource group and VNET as DC-1*
 
 <p align="center">
@@ -91,7 +100,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Login to DC-1 using Microsoft Remote Desktop
 
   - Go To: `Start > Windows Administrative Tools > Windows Defender Firewall with Advanced Security > Inbound Rules`
+
   - Sort the list by: `protocols`
+
   - Find and enable these two inbound rules: `Core Networking Diagnostics` and `ICMPv4`
 
 <p align="center">
@@ -115,10 +126,15 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Log back into: `DC-1`
 
   - Open: `Server Manager`
+ 
   - Select: `Add Roles and Features > Follow the prompts`
+ 
   - At Server Roles, check: `Active Directory Domain Services`
+
     - *Ignore how the picture below already says "Installed"*
+
   - Select: `Add Features > select Next`
+
   - *Complete the installation*
 
 <p align="center">
@@ -133,7 +149,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Select: `Promote This Server to a Domain Controller`
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/3b799874-428a-4358-9430-2a500d7f4544"><br>
 
 ***
 
@@ -150,16 +166,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Select: `Install` to complete the installation
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/5a0f1ee2-fada-45da-877f-2c811b7a2dba"><br>
 
 ***
 
 - *DC-1 will automatically restart*
 
-- Log back into DC-1 as user: `mydomain.com\labuser`
+- Log back into DC-1 as user: `mydomain.com\*usernameyoucreated*`
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/6d2b5906-21a0-420e-b40c-d6753b1ab97a"><br>
 
 ***
 
@@ -181,6 +197,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - <ins>Create 2 OUs</ins>:
 
   - Name the first: `_EMPLOYEES`
+ 
   - Name the second: `_ADMINS`
 	
 <p align="center">
@@ -197,11 +214,17 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Right-click the name of the OU > New > User
 
   - First/Last name: Jane Doe
+
   - User login name: jane_admin
+
   - Select: `Next`
+
   - Create: `a password`
+
   - Uncheck: `all boxes`
+ 
   - Select: `Next`
+
   - Select: `Finish`
 
 <p align="center">
@@ -214,7 +237,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Right-click: `Jane Doe > select Properties`
 
   - Click the tab named: `"Member of" > select Add`
+
   - Type in the names of your domain administrators
+
   - Select: `"Check Names" > OK > Apply`
 
 - Log out of: `DC-1 as "labuser"`
@@ -263,8 +288,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - Select: `OK`
 
-	- Username: mydomain.com\jane_admin
-	- Type in password and press OK
+  - Username: mydomain.com\jane_admin
+
+  - Type in password and press OK
 
 - Restart the computer			
 
