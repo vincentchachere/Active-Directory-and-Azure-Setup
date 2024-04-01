@@ -85,14 +85,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/20931f76-739c-4511-b784-237e8ec83d56"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/2c3a9298-cec6-4a55-9996-79d0f3861afa"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d0f69592-b926-46bb-a1eb-38e4fbb36554"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/4a4a9db9-1d7c-4bb9-9f63-93e3c65c2a73"><br>
-<p align="center">
-<img width="800" alt="isolated" src=""><br>
 
 ***
 
@@ -103,14 +95,18 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Find and enable these two inbound rules: `Core Networking Diagnostics` and `ICMPv4`
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/2c3a9298-cec6-4a55-9996-79d0f3861afa"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d0f69592-b926-46bb-a1eb-38e4fbb36554"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/4a4a9db9-1d7c-4bb9-9f63-93e3c65c2a73"><br>
 
 ***
 
 - Log back into: `Client-1` *(the command line will automatically begin pinging DC-1 successfully)*
     
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d63d76b9-18a3-4360-8db8-e1ecb4b67aa2"><br>
 
 ***
 
@@ -126,11 +122,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - *Complete the installation*
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/37cea973-22a7-4ca7-baf4-775a24cf20f8"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/51c57e71-3b3a-4629-8461-cba0e0894e9f"><br>
 
 ***
 
 - At the top right of the Server Manager Dashboard, click on: `the flag`
+
 - Select: `Promote This Server to a Domain Controller`
 
 <p align="center">
@@ -149,7 +148,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Select: `Next` and follow the prompts
 
 - Select: `Install` to complete the installation
-
 
 <p align="center">
 <img width="800" alt="isolated" src=""><br>
