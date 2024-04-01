@@ -190,7 +190,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Select: `Active Directory Users and Computers`
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/1e719e76-76c3-459c-b3ff-09c29116614d"><br>
 
 ***
 
@@ -203,7 +203,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Name the second: `_ADMINS`
 	
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/934a8716-3682-4e6a-bdcc-7aee9961550d"><br>
 
 ***
 
@@ -230,7 +230,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - Select: `Finish`
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/7c06a548-92aa-483f-b9dd-5ed730206d33"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/6092adc5-b3f6-44cd-b5d6-30b5bbb8bcf1"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/7890d83f-e2b2-4b26-8bae-993bd70d342d"><br>
 
 ***
 
@@ -249,7 +253,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Log back in as: `mydomain.com\jane_admin`
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/ffa61100-9141-4b28-a26b-2e64e220a868"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/928096e4-951d-4ee5-a255-88e0d01b30c3"><br>
  
 ***
 
@@ -272,7 +278,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Select: `Yes`
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/12bf2eb6-6225-48d2-b694-19dd5f7f9b52"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d4e6163f-4144-43bc-aefe-a1d4f12e88e2"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/f7a0426a-c925-4c62-806a-0968dba915f8"><br>
 
 ***
 
@@ -299,7 +309,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 - Restart the computer			
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/b4e6e062-ab06-46c5-92cc-8c619caf866b"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/61e0ef71-6a75-4f11-9841-510cc4c7c275"><br>
 
 ***
 
