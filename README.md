@@ -377,15 +377,6 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/af519bc2-7a69-4417-81f0-8d59dc3ca289"><br>
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
-<p align="center">
-<img width="800" alt="isolated" src=""><br>
-
-***
-
-<p align="center">
-<img width="800" alt="isolated" src=""><br>
-
-
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/1d86bdfb-28d1-4205-a264-1b4a6fedfcc1"><br>
 
 🎉Congratulations! You have implementated on-premises Active Directory and created users within an Azure virtual machine!🎉
