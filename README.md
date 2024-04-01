@@ -364,9 +364,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
   - You will see all the accounts that were created
 
-- You can now log into: `Client-1` with one of the accounts that were created
+- You can now log into: `Client-1 - with one of the accounts that were created`
 
-  - Try logging into: `Client-1 as user "base.milu" using the password "Password1"`
+- Use the Password: `Password1`
 
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/88f0f8eb-4bdc-4564-be94-4ebada27a2c9"><br>
@@ -375,7 +375,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/c99eb48e-e21d-4c48-b7d0-55401a5f3788"><br>
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/af519bc2-7a69-4417-81f0-8d59dc3ca289"><br>
 <p align="center">
 <img width="800" alt="isolated" src=""><br>
 <p align="center">
