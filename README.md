@@ -317,9 +317,7 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ### Step 6: Setup Remote Desktop for non-administrative users on Client-1
 
-- Log back into: `Client-1`
-
-- Use: `mydomain.com\jane_admin`
+- Log back into <ins>Client-1</ins> as user: `mydomain.com\jane_admin`
 
 - Right-click: the `Start` menu
 
@@ -327,14 +325,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 - On the right-hand side of the screen, select: `Remote Desktop`
 
-- Under User Accounts, click: `Select Users That Can Remotely Access This PC > Add`
+- Under User Accounts, Click: `Select Users That Can Remotely Access This PC > Add`
 
-- Type in the name of your domain users
+- Type in: `the name of your domain users`
 
 - Select: `Check Names > OK > OK`
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/2564a83b-1be8-485b-af22-f5b26814086b"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/182150f1-f40d-43e7-90e2-9139f6ef15d9"><br>
 
 ***
 
@@ -350,7 +350,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
 	- You can find the script [here](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1)
 
 <p align="center">
-<img width="800" alt="isolated" src=""><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/9bf54bf4-5d89-4abf-8d12-5c7c4adc5853"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/c5121196-448d-45cd-ac92-a9c37eb96ff6"><br>
 
 ***
 
@@ -366,6 +368,16 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
   - Try logging into: `Client-1 as user "base.milu" using the password "Password1"`
 
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/88f0f8eb-4bdc-4564-be94-4ebada27a2c9"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/8b1bc4f2-6771-4513-93a8-819d99d6bd02"><br>
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/c99eb48e-e21d-4c48-b7d0-55401a5f3788"><br>
+<p align="center">
+<img width="800" alt="isolated" src=""><br>
+<p align="center">
+<img width="800" alt="isolated" src=""><br>
 <p align="center">
 <img width="800" alt="isolated" src=""><br>
 
