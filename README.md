@@ -38,28 +38,36 @@ This tutorial outlines the implementation of on-premises Active Directory within
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/696ce759-a437-4bb2-91a6-4a54599e7671"><br>
 
-
 *** 
 
-- Set DC-1's Virtual Network Interface Card (vNIC) private IP address to be static
+- Set DC-1's Virtual Network Interface Card (vNIC) Private IP address to be static
 
   - Go to: `DC-1's network settings`
 
   - Select: `Networking`
 
   - Select: `the link next to Network Interface`
-
-  - Select: `IP Configurations > ipconfig1`
-
-  - Change the assignment from dynamic to: `static` *(This ensures DC-1's IP address will not change)*
 	   
 <p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/83432706-4761-47a8-9872-c0ebb2581571"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/562dd2af-c9a7-4459-9371-bf7546dc2804"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/97a42386-e953-4c44-832c-d26703720b1c"><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/b7e0618a-7a21-4ff1-96c3-a5700eb2eb5d"><br>
 
+***
+
+- Select: `IP Configurations`
+
+- Select: `ipconfig1`
+
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/5bacddf0-79dc-4dbd-a00d-7d49200ce547"><br>
+
+***
+
+- Change the assignment from dynamic to: `static` *(This ensures DC-1's IP address will not change)*
+
+- Click: `Save`
+
+<p align="center">
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/ea66a662-42a4-46b8-ab24-4c50a67c8dc9"><br>
 
 ***
 
