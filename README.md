@@ -34,9 +34,9 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - *Take note of the virtual network (VNET) that is automatically created*
  
 <p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/ef8c0da4-6ad5-402e-808b-8d08c9ef4677"><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/a820996f-834e-4c6f-91c1-13f9624d6580"><br>
 <p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/c9fab933-8d92-4ca2-9c05-2fc68e67a623"><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/696ce759-a437-4bb2-91a6-4a54599e7671"><br>
 
 
 *** 
