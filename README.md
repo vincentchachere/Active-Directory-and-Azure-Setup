@@ -80,11 +80,11 @@ This tutorial outlines the implementation of on-premises Active Directory within
   - *Use the same resource group and VNET as DC-1*
 
 <p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/ee1aa225-6024-4458-b2e7-6e3aae4af51a"><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/2d3a2248-4b64-4bc0-bafa-234ba19b22d4"><br>
 <p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/1f475c96-0c5f-440a-b789-4af56d260459"><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/24782cca-2981-49fb-b0e1-72dfbe75f155"><br>
 <p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/1dde6b86-f0d3-4bcb-9706-91ac4fc5a308"><br>
+<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d3ad4161-60fe-4cc0-9196-ae40884d3f60"><br>
 
 ***
 
