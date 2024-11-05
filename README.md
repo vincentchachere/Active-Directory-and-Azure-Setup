@@ -389,10 +389,4 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 🎉Congratulations! You have implementated on-premises Active Directory and created users within an Azure virtual machine!🎉
 
-☎️ For any questions, concerns, or just to connect, you can contact me at:
-
-📲 LinkedIn: www.linkedin.com/in/vincentchachere
-
-📬 Email: vincent.chachere@gmail.com
-
-(No soliticing, only real connections, please and thank you.)
+☎️ For any questions, or just to connect, you can message me at: www.linkedin.com/in/vincentchachere
