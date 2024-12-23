@@ -92,20 +92,31 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 
-- The second virtual machine will be the Clients
+### 3. ) Create Client-1 VM
 
-  - Name: `Client-1`
+*You may need to wait a bit for the VNET (Active-Directory-Vnet) to be created.*
 
-  - Image: `Windows 10 Pro`
+<ins>Similar to creating your domain controller, here are the Client-1 Configurations</ins>:
 
-  - *Use the same resource group and VNET as DC-1*
+- Resource Group: `Active-Directory-Lab` (Same as your Domain Controller: DC-1)
 
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/2d3a2248-4b64-4bc0-bafa-234ba19b22d4"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/24782cca-2981-49fb-b0e1-72dfbe75f155"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d3ad4161-60fe-4cc0-9196-ae40884d3f60"><br>
+- Virtual Machine Name: `Client-1`
+
+- Region: `East US` (Same as your Domain Controller: DC-1)
+
+- Image: `Windows 10 Pro, version 22H2 - x64 Gen2`
+
+- Size: `Standard_D2s_v3 - 2 vcpus, 8 GiB memory ($70.08/month)` (Same as your Domain Controller: DC-1)
+
+- Username: `Use the same one you used for you Domain Controller` for simplicity sake
+
+- Password: `Use the same one you used for you Domain Controller` for simplicity sake
+
+- Check: `The Licensing Boxe` at the bottom
+
+- Go To: `Networking` Tab to select the same VNET as your domain controller (DC-1)
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/d68b9dde-7cf9-4c3b-9a3b-54b07117a782">
 
 ***
 
