@@ -20,6 +20,14 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ## Deployment and Configuration Steps
 
+<details>
+
+<summary>
+
+## ⚙️ Part 1: Building Active Directory Infrastructure
+
+</summary>
+
 ### 1. ) Create Domain Controller (DC-1)
 
 First, create a resource group to host the virtual machines: DC-1 (Domain Controller) and Client-1.
@@ -196,9 +204,15 @@ Now we will Set Client-1’s DNS settings to DC-1’s Private IP address, which 
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/c0e0d75a-6a25-4fd1-9c76-d50539b68c97">
 
-<br>
-<br>
-<br>
+</details>
+
+<details>
+
+<summary>
+
+## ⚙️ Part 2: Deploying Active Directory and User Creation
+
+</summary>
 
 ### 6. ) Install Active Directory
 
@@ -463,6 +477,8 @@ Now we will Set Client-1’s DNS settings to DC-1’s Private IP address, which 
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/af519bc2-7a69-4417-81f0-8d59dc3ca289"><br>
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/1d86bdfb-28d1-4205-a264-1b4a6fedfcc1"><br>
+
+</details>
 
 🎉Congratulations! You have implementated on-premises Active Directory and created users within an Azure virtual machine!🎉
 
