@@ -118,9 +118,11 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/d68b9dde-7cf9-4c3b-9a3b-54b07117a782">
 
-***
+<br>
+<br>
+<br>
 
-### Step 2: Ensure Connectivity Between the Client and Domain Controller
+### Step 2: Test Connectivity Between the Client-1 and Domain Controller (DC-1)
 
 - Login to: `Client-1 using Microsoft Remote Desktop`
 
@@ -134,10 +136,11 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 
     - *To fix this, we need to enable ICMPv4 on DC-1's local Windows firewall*
 
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/20931f76-739c-4511-b784-237e8ec83d56"><br>
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/9006e012-66c0-4e64-9ce7-0554e78a861d">
 
-***
+<br>
+<br>
+<br>
 
 - Login to DC-1 using Microsoft Remote Desktop
 
@@ -154,14 +157,18 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/4a4a9db9-1d7c-4bb9-9f63-93e3c65c2a73"><br>
 
-***
+<br>
+<br>
+<br>
 
 - Log back into: `Client-1` *(the command line will automatically begin pinging DC-1 successfully)*
     
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d63d76b9-18a3-4360-8db8-e1ecb4b67aa2"><br>
 
-***
+<br>
+<br>
+<br>
 
 ### Step 3: Install Active Directory
 
@@ -184,7 +191,9 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/51c57e71-3b3a-4629-8461-cba0e0894e9f"><br>
 
-***
+<br>
+<br>
+<br>
 
 - At the top right of the Server Manager Dashboard, click on: `the flag`
 
@@ -193,7 +202,9 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/3b799874-428a-4358-9430-2a500d7f4544"><br>
 
-***
+<br>
+<br>
+<br>
 
 - Select: `Add a New Forest`
 
@@ -210,7 +221,9 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/5a0f1ee2-fada-45da-877f-2c811b7a2dba"><br>
 
-***
+<br>
+<br>
+<br>
 
 - *DC-1 will automatically restart*
 
@@ -219,7 +232,9 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <p align="center">
 <img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/6d2b5906-21a0-420e-b40c-d6753b1ab97a"><br>
 
-***
+<br>
+<br>
+<br>
 
 ### Step 4: Create an Admin and Normal User Account in Active Directory v1.15.8
      
