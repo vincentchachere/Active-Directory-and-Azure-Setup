@@ -176,7 +176,7 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 
 Now we will Set Client-1’s DNS settings to DC-1’s Private IP address, which will allow the client-1 VM to resolve domain-related DNS queries through the domain controller (DC-1).
 
-- Go To: Resource Group > Client-1 > Network Settings > `Network Interface (client-160_z1)` > `DNS servers`
+- Go To: Resource Group: `Active-Directory-Lab` > VM: `Client-1` > `Network Settings` > Network Interface: `client-11408_z1` > `DNS servers`
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2be62c15-ec58-4afe-8579-2e0bd3929243">
 
