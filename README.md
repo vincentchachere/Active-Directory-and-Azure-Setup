@@ -20,54 +20,77 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ## Deployment and Configuration Steps
 
-### Step 1: Setup Resources in Azure
+### 1. ) Setup Resources in Azure
 
-<ins>Create 2 virtual machines</ins>
-- If you need help creating your virtual machines, please see my tutorial [here](https://github.com/roslyndwilliams/virtual-machine)
+<ins>Create 2 Virtual Machines</ins>:
 
-- The first virtual machine will be the Domain Controller
+- If you need help creating your virtual machines, go to my previous tutorial: [here](https://github.com/vincentchachere/virtual-machine)
+
+- The first Virtual Machine will be the Domain Controller:
 
   - Name: `DC-1`
 
-  - Image: `Windows Server 2022`
+  - Image: `Windows Server 2022 Datacenter: Azure Edition - x64 Gen2`
 
-  - *Take note of the virtual network (VNET) that is automatically created*
- 
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/a820996f-834e-4c6f-91c1-13f9624d6580"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/696ce759-a437-4bb2-91a6-4a54599e7671"><br>
+*Take note of the Virtual Network (VNET) that is automatically created*
 
-*** 
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/f4af6123-245c-4ec0-809f-cd0b0109e4cf">
 
-- Set DC-1's Virtual Network Interface Card (vNIC) Private IP address to be static
+<br>
+<br>
+<br>
 
-  - Go to: `DC-1's network settings`
+<ins>Within your Network tab</ins>:
 
-  - Select: `Networking`
+  - Virtual Network: `Active-Directory-Vnet`
 
-  - Select: `the link next to Network Interface`
+  - *The Subnet will create itself*
+
+  - Click: `Review + Create`
+
+    Then..
+
+  - Click:  `Create`
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/0eccc2b2-0b13-4351-8315-b84b42e26d1a">
+
+<br>
+<br>
+<br>
+
+### 2. ) Set Domain Controller's (DC-1) NIC Private IP Address to be Static
+
+ - Resource Group: `Active-Directory-Lab` > VM: `DC-1` > `Network Settings` > Network Interface: `dc-1335_z1` > `ipconfig1`
 	   
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/b7e0618a-7a21-4ff1-96c3-a5700eb2eb5d"><br>
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/fd418504-f33c-4938-b41d-52e5326486b7">
 
-***
+<br>
+<br>
+<br>
 
-- Select: `IP Configurations`
+- Go To: `DC-1's NIC Private IP Address`
 
-- Select: `ipconfig1`
+  - Resource Group: `Active-Directory-Lab` > VM: `DC-1` > `Network Settings` > Network Interface: `dc-1335_z1` > `ipconfig1`
 
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/5bacddf0-79dc-4dbd-a00d-7d49200ce547"><br>
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/fd418504-f33c-4938-b41d-52e5326486b7">
 
-***
+<br>
+<br>
+<br>
 
-- Change the assignment from dynamic to: `static` *(This ensures DC-1's IP address will not change)*
+<ins>Setting DC-1’s Private IP address to be static</ins>:
 
-- Click: `Save`
+- Resource Group > DC-1 > Network Settings > `Network Interface` (dc-1139_z1) > `ipconfig1`
 
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/ea66a662-42a4-46b8-ab24-4c50a67c8dc9"><br>
+  - Select: `Static`
+
+  - Click: `Save`
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/c017c1de-e443-4abe-963b-ede58dceb837">
+
+<br>
+<br>
+<br>
 
 ***
 
