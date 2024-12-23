@@ -184,13 +184,13 @@ Now we will Set Client-1’s DNS settings to DC-1’s Private IP address, which 
 <br>
 <br>
 
-<ins>Setting Client's DNS servers to DC-1's Private IP Address</ins>:
+<ins>Setting Client's DNS Servers to DC-1's Private IP Address</ins>:
 
-- Go To: Resource Group > Client-1 > Network Settings > Network Interface (client-160_z1) > `DNS servers`
+- Go To: Resource Group: `Active-Directory-Lab` > VM: `Client-1` > `Network Settings` > Network Interface: `client-11408_z1` > `DNS servers`
 
 - Select: `Custom`
 
-- Input: `DC-1's Private IP Address` (Example; mine is: 10.0.0.4)
+- Input: `DC-1's Private IP Address` (Example: mine is: 10.0.0.4)
 
 - Click: `Save` when done
 
