@@ -1,6 +1,20 @@
+<br>
+
 <p align="center">
-<img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
+<img width="700" src="https://github.com/user-attachments/assets/9b6b0a51-6411-4e01-96c5-1bb31e6fd986" alt="Microsoft Active Directory Logo"/>
+<br>
+
+<br>
+
+<br>
+
+<h1>Building Active Directory Infrastructure: Setup for Active Directory and Network Traffic Analysis Between Azure VMs</h1>
+<br>
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/ef89ffa6-e50e-4996-bca1-85925307f212" height="80%" width="80%" alt="9"/><br />
 </p>
+<br />
 
 # Lab Overview
 This tutorial outlines the implementation of on-premises Active Directory within two Azure virtual machines.<br/>
