@@ -122,7 +122,7 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 
-### 3: Test Connectivity Between the Client-1 and Domain Controller (DC-1)
+### 4: Test Connectivity Between the Client-1 and Domain Controller (DC-1)
 
 - Remote Desktop (RDP) into: `Client-1` (labuser)
 
@@ -142,20 +142,19 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 
-- Login to DC-1 using Microsoft Remote Desktop
+<ins>Test Connectivity Between Client-1 and the Domain Controller (DC-1)</ins>:
 
-  - Go To: `Start > Windows Administrative Tools > Windows Defender Firewall with Advanced Security > Inbound Rules`
+- Remote Desktop (RDP) into: `DC-1`
 
-  - Sort the list by: `protocols`
+- Search: `wf.msc` (Windows Firewall - Microsoft)
 
-  - Find and enable these two inbound rules: `Core Networking Diagnostics` and `ICMPv4`
+*Look for the rules with Core Networking Diagnostics - ICMP Echo Request (ICMPv4-In)*
 
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/2c3a9298-cec6-4a55-9996-79d0f3861afa"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d0f69592-b926-46bb-a1eb-38e4fbb36554"><br>
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/4a4a9db9-1d7c-4bb9-9f63-93e3c65c2a73"><br>
+- Enable: `Both ICMPv4 Inbound Rules` (There are <ins>two</ins> you need to enable)
+
+*They should have two green check marks next to them when you enable them just like the others.*
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/3b0ec287-a457-4508-a08c-fb6c0c3b1c39">
 
 <br>
 <br>
