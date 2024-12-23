@@ -78,19 +78,9 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 
-- Go To: `DC-1's NIC Private IP Address`
-
-  - Resource Group: `Active-Directory-Lab` > VM: `DC-1` > `Network Settings` > Network Interface: `dc-1335_z1` > `ipconfig1`
-
-<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/fd418504-f33c-4938-b41d-52e5326486b7">
-
-<br>
-<br>
-<br>
-
 <ins>Setting DC-1’s Private IP address to be static</ins>:
 
-- Resource Group > DC-1 > Network Settings > `Network Interface` (dc-1139_z1) > `ipconfig1`
+- Resource Group: `Active-Directory-Lab` > VM: `DC-1` > `Network Settings` > Network Interface: `dc-1335_z1` > `ipconfig1`
 
   - Select: `Static`
 
@@ -101,8 +91,6 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 <br>
-
-***
 
 - The second virtual machine will be the Clients
 
