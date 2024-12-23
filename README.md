@@ -20,19 +20,29 @@ This tutorial outlines the implementation of on-premises Active Directory within
 
 ## Deployment and Configuration Steps
 
-### 1. ) Setup Resources in Azure
+### 1. ) Create Domain Controller (DC-1)
 
-<ins>Create 2 Virtual Machines</ins>:
+First, create a resource group to host the virtual machines: DC-1 (Domain Controller) and Client-1.
 
-- If you need help creating your virtual machines, go to my previous tutorial: [here](https://github.com/vincentchachere/virtual-machine)
+<ins>Here are the following configurations</ins>:
 
-- The first Virtual Machine will be the Domain Controller:
+  - Resource Group: `Active-Directory-Lab`
 
-  - Name: `DC-1`
+  - Virtual Machine Name: `DC-1`
 
-  - Image: `Windows Server 2022 Datacenter: Azure Edition - x64 Gen2`
+  - Region: `East US`
 
-*Take note of the Virtual Network (VNET) that is automatically created*
+  - Image: `Windows Server 2022 Datacenter: Azure Edition - x64 Gen2` (*Make sure to choose the correct VM image, or setting up the Domain Controller may fail.*)
+   
+  - Size: `Standard_D2s_v3 - 2 vcpus, 8 GiB memory ($137.24/month)`
+
+  - Username: `labuser` (*Whatever you want - Just remember it*)
+
+  - Password: `Whatever you want - Just remember it`
+
+  - Check: `The Two Licensing Boxes` at the bottom
+
+  - Go To: `Networking` Tab to create your Virtual Network and Subnet
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/f4af6123-245c-4ec0-809f-cd0b0109e4cf">
 
