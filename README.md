@@ -122,19 +122,19 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 
-### Step 2: Test Connectivity Between the Client-1 and Domain Controller (DC-1)
+### 3: Test Connectivity Between the Client-1 and Domain Controller (DC-1)
 
-- Login to: `Client-1 using Microsoft Remote Desktop`
+- Remote Desktop (RDP) into: `Client-1` (labuser)
 
-- Search: `Command Prompt` and open it
+- Once Inside Clien-1 Open: `PowerShell`
 
-- Ping: `DC-1's private IP Address` (for example, 10.1.0.4)
+- Perpetual Ping: `DC-1's private IP Address`
 
-  - Type: `ping -t 10.1.0.4` into the command-line interface
+  - Type In: `ping 10.1.0.4 -t`
 
-    - *The ping request continually  times out due to the firewall settings*
+*The ping request continually times out due to the firewall settings.*
 
-    - *To fix this, we need to enable ICMPv4 on DC-1's local Windows firewall*
+*To fix this, we need to enable the two ICMPv4 inbound rules on DC-1's local Windows firewall.*
 
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/9006e012-66c0-4e64-9ce7-0554e78a861d">
 
