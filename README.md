@@ -2,9 +2,17 @@
 <img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
 </p>
 
-# On-Premises Active Directory Deployed in the Cloud (Azure)
+# Lab Overview
 This tutorial outlines the implementation of on-premises Active Directory within two Azure virtual machines.<br/>
 
+## On-Premises Active Directory Deployed in the Cloud (Azure)
+Active Directory essentially manages user accounts, passwords, permissions, and devices at large scale. This tutorial explains how to implement on-premises Active Directory in Azure Virtual Machines.
+
+<ins>The difference between On-Premise Active Directory and Azure Active Directory</ins>:
+
+- `On-Premise Active Directory`: Refers to infrastructure hosted and managed locally within an organization's physical data centers. This requires direct management and maintenance by the organization.
+
+- `Azure Active Directory`: Refers to infrastructure and services provided remotely by Microsoft, hosted on their global data centers. This offers scalable, managed cloud services with remote access.
 
 ## Environments and Technologies Used
 
