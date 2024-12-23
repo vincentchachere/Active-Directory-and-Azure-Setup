@@ -13,8 +13,6 @@
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/ef89ffa6-e50e-4996-bca1-85925307f212" height="80%" width="80%" alt="9"/><br />
-</p>
-<br />
 
 <h1 align="center">Lab Overview</h1>
 
@@ -23,8 +21,6 @@ This is the first project in our comprehensive series of tutorials on Azure and 
 The primary goal is to create a basic lab environment in Azure that simulates the typical enterprise deployment of Active Directory.
 
 By completing this project, we'll build the essential infrastructure to explore Active Directory functionality in an Azure-based network, preparing for more advanced concepts in future tutorials.
-
-<br/>
 
 ## On-Premises Active Directory Deployed in the Cloud (Azure)
 Active Directory essentially manages user accounts, passwords, permissions, and devices at large scale. This tutorial explains how to implement on-premises Active Directory in Azure Virtual Machines.
