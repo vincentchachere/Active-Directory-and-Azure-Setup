@@ -16,8 +16,15 @@
 </p>
 <br />
 
-# Lab Overview
-This tutorial outlines the implementation of on-premises Active Directory within two Azure virtual machines.<br/>
+<h1 align="center">Lab Overview</h1>
+
+This is the first project in our comprehensive series of tutorials on Azure and Active Directory implementation. In this initial project, we'll establish the foundational setup for the subsequent tutorials.
+
+The primary goal is to create a basic lab environment in Azure that simulates the typical enterprise deployment of Active Directory.
+
+By completing this project, we'll build the essential infrastructure to explore Active Directory functionality in an Azure-based network, preparing for more advanced concepts in future tutorials.
+
+<br/>
 
 ## On-Premises Active Directory Deployed in the Cloud (Azure)
 Active Directory essentially manages user accounts, passwords, permissions, and devices at large scale. This tutorial explains how to implement on-premises Active Directory in Azure Virtual Machines.
@@ -40,13 +47,18 @@ Active Directory essentially manages user accounts, passwords, permissions, and 
 - Windows Server 2022
 - Windows 10 (21H2)
 
-## Deployment and Configuration Steps
+## High-Level Active Directory Infrastructure Steps
+
+- Create Domain Controller (DC-1)
+- Set Domain Controller's (DC-1) NIC Private IP Address to be Static
+- Create Client-1 VM
+- Test Connectivity Between the Client-1 and Domain Controller (DC-1)
 
 <details>
 
 <summary>
 
-## ⚙️ Part 1: Building Active Directory Infrastructure
+## ⚙️ Part 1: Create Domain Controller (DC-1)
 
 </summary>
 
@@ -95,8 +107,16 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/0eccc2b2-0b13-4351-8315-b84b42e26d1a">
 
 <br>
-<br>
-<br>
+
+</details>
+
+<details>
+
+<summary>
+
+## ⚙️ Part 2: Set Domain Controller's (DC-1) NIC Private IP Address to be Static
+
+</summary>
 
 ### 2. ) Set Domain Controller's (DC-1) NIC Private IP Address to be Static
 
@@ -119,8 +139,16 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/c017c1de-e443-4abe-963b-ede58dceb837">
 
 <br>
-<br>
-<br>
+
+</details>
+
+<details>
+
+<summary>
+
+## ⚙️ Part 3: Create Client-1 VM
+
+</summary>
 
 ### 3. ) Create Client-1 VM
 
@@ -149,10 +177,18 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/d68b9dde-7cf9-4c3b-9a3b-54b07117a782">
 
 <br>
-<br>
-<br>
 
-### 4.) Test Connectivity Between the Client-1 and Domain Controller (DC-1)
+</details>
+
+<details>
+
+<summary>
+
+## ⚙️ Part 4: Test Connectivity Between Client-1 and Domain Controller (DC-1)
+
+</summary>
+
+### 4.) Test Connectivity Between Client-1 and Domain Controller (DC-1)
 
 - Remote Desktop (RDP) into: `Client-1` (labuser)
 
@@ -199,8 +235,8 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/58978843-73c7-47b5-a4d9-d4ff062487fc">
 
 <br>
-<br>
-<br>
+
+</details>
 
 ### 5. ) Set Client-1’s DNS settings to DC-1’s Private IP address
 
