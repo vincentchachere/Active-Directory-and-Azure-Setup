@@ -172,7 +172,35 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 
-### 5. ) Install Active Directory
+### 5. ) Set Client-1’s DNS settings to DC-1’s Private IP address
+
+Now we will Set Client-1’s DNS settings to DC-1’s Private IP address, which will allow the client-1 VM to resolve domain-related DNS queries through the domain controller (DC-1).
+
+- Go To: Resource Group > Client-1 > Network Settings > `Network Interface (client-160_z1)` > `DNS servers`
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/2be62c15-ec58-4afe-8579-2e0bd3929243">
+
+<br>
+<br>
+<br>
+
+<ins>Setting Client's DNS servers to DC-1's Private IP Address</ins>:
+
+- Go To: Resource Group > Client-1 > Network Settings > Network Interface (client-160_z1) > `DNS servers`
+
+- Select: `Custom`
+
+- Input: `DC-1's Private IP Address` (Example; mine is: 10.0.0.4)
+
+- Click: `Save` when done
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/c0e0d75a-6a25-4fd1-9c76-d50539b68c97">
+
+<br>
+<br>
+<br>
+
+### 6. ) Install Active Directory
 
 - Log back into: `DC-1`
 
