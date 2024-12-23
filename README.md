@@ -122,7 +122,7 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 
-### 4: Test Connectivity Between the Client-1 and Domain Controller (DC-1)
+### 4.) Test Connectivity Between the Client-1 and Domain Controller (DC-1)
 
 - Remote Desktop (RDP) into: `Client-1` (labuser)
 
@@ -160,16 +160,19 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 
-- Log back into: `Client-1` *(the command line will automatically begin pinging DC-1 successfully)*
-    
-<p align="center">
-<img width="800" alt="isolated" src="https://github.com/vincentchachere/azure-on-prem-ad/assets/161680745/d63d76b9-18a3-4360-8db8-e1ecb4b67aa2"><br>
+<ins>Test Connectivity Between Client-1 and the Domain Controller (DC-1)</ins>:
+
+- Log back into: `Client-1`
+
+*Notice the command line will automatically begin pinging DC-1 successfully*
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/58978843-73c7-47b5-a4d9-d4ff062487fc">
 
 <br>
 <br>
 <br>
 
-### Step 3: Install Active Directory
+### 5. ) Install Active Directory
 
 - Log back into: `DC-1`
 
@@ -235,7 +238,7 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <br>
 <br>
 
-### Step 4: Create an Admin and Normal User Account in Active Directory v1.15.8
+### 6. ) Create an Admin and Normal User Account in Active Directory v1.15.8
      
 - On DC-1, open: `Server Manager`
 
@@ -313,7 +316,7 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
  
 ***
 
-### Step 5: Join Client-1 to your domain (mydomain.com)
+### 7. ) Join Client-1 to your domain (mydomain.com)
 
 - Go back to: the `Azure portal`
 
@@ -369,7 +372,7 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 
 ***
 
-### Step 6: Setup Remote Desktop for non-administrative users on Client-1
+### 8. ) Setup Remote Desktop for non-administrative users on Client-1
 
 - Log back into <ins>Client-1</ins> as user: `mydomain.com\jane_admin`
 
@@ -392,7 +395,7 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 
 ***
 
-### Step 7: Create as many additional users as you would like and attempt to log into Client-1 with one of the users' profiles
+### 9. ) Create as many additional users as you would like and attempt to log into Client-1 with one of the users' profiles
 
 - Log back into: `DC-1 as jane_admin`
 
