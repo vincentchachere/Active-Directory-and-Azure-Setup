@@ -210,7 +210,7 @@ Now we will Set Client-1’s DNS settings to DC-1’s Private IP address, which 
 
 <summary>
 
-## ⚙️ Part 2: Deploying Active Directory and User Creation
+## ⚙️ Part 2: Active Directory Delpoyment, Configuration, and User Creation
 
 </summary>
 
