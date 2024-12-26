@@ -231,6 +231,18 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 <img width="800" alt="isolated" src="https://github.com/user-attachments/assets/58978843-73c7-47b5-a4d9-d4ff062487fc">
 
 <br>
+<br>
+<br>
+
+<ins>Test Connectivity Between Client-1 and the Domain Controller (DC-1)</ins>:
+
+*Ensure Client-1's DNS Severs are set to DC-1's Private IP Address*
+
+- Type and Enter: `ipconfig /all`
+
+*Notice that Client-1's DNS Severs are set to DC-1's Private IP Address*
+
+<img width="800" alt="isolated" src="https://github.com/user-attachments/assets/cc32fa73-ff89-4fb4-b2a5-2139d7b1595c">
 
 </details>
 
