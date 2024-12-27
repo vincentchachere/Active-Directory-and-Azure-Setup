@@ -188,7 +188,7 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 
 - Remote Desktop (RDP) into: `Client-1` (labuser)
 
-- Once Inside Clien-1 Open: `PowerShell`
+- Once Inside Client-1 Open: `PowerShell`
 
 - Perpetual Ping: `DC-1's private IP Address`
 
