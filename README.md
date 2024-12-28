@@ -234,6 +234,6 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 
 <h2 align="center">Final Thoughts</h2> 
 
-You’ve successfully deployed on-premises Active Directory in the cloud using Azure Virtual Machines. This foundational setup, including the creation of a Domain Controller (DC-1) and Client-1 VM with tested connectivity, establishes the basic infrastructure for simulating enterprise-level Active Directory in Azure. To continue building on this lab, check out my [next tutorial](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration), where we’ll dive deeper into deploying, configuring, and expanding Active Directory functionality.
+You’ve successfully deployed on-premises Active Directory in the cloud using Azure Virtual Machines. This foundational setup, including the creation of a Domain Controller (DC-1) and Client-1 VM with tested connectivity, establishes the basic infrastructure for simulating enterprise-level Active Directory in Azure. To continue building on this lab, check out the [next tutorial](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration) within this series, where we’ll dive deeper into deploying, configuring, and expanding Active Directory functionality.
 
 ☎️ For any questions or just to connect you can reach me at: www.linkedin.com/in/vincentchachere
