@@ -10,7 +10,7 @@
 
 <h1 align="center">Building Active Directory Infrastructure: Setup for Active Directory and Network Traffic Analysis Between Azure VMs</h1>
 
-This is the first project in our [comprehensive series of tutorials](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration) on Azure and Active Directory implementation. In this initial project, we'll establish the foundational setup for the subsequent tutorials.
+This is the first project in the [comprehensive series of tutorials](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration) on Azure and Active Directory implementation. In this initial project, we'll establish the foundational setup for the subsequent tutorials.
 
 The primary goal is to create a basic lab environment in Azure that simulates the typical enterprise deployment of Active Directory.
 
