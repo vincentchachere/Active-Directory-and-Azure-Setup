@@ -10,11 +10,9 @@
 
 <h1 align="center">Building Active Directory Infrastructure: Setup for Active Directory and Network Traffic Analysis Between Azure VMs</h1>
 
-This is the first project in the [comprehensive series of tutorials](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration) on Azure and Active Directory implementation. In this initial project, we'll establish the foundational setup for the subsequent tutorials.
+This is the first project in the [comprehensive series of tutorials](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration) on Azure and Active Directory implementation. In this initial project, we'll establish the foundational setup for subsequent tutorials.
 
-The primary goal is to create a basic lab environment in Azure that simulates the typical enterprise deployment of Active Directory.
-
-By completing this project, we'll build the essential infrastructure to explore Active Directory functionality in an Azure-based network, preparing for more advanced concepts in future tutorials.
+The primary goal of this project is to create a basic lab environment in Azure that simulates the typical enterprise deployment of Active Directory. The completion of this lab establishes the essential infrastructure to explore Active Directory functionality in an Azure-based network, preparing for more advanced concepts in future tutorials.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/ef89ffa6-e50e-4996-bca1-85925307f212" height="80%" width="80%" alt="9"/><br />
@@ -32,6 +30,7 @@ Active Directory essentially manages user accounts, passwords, permissions, and 
 
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
+- Windows Defender Firewall
 - Active Directory Domain Services
 - PowerShell
 
@@ -231,7 +230,7 @@ First, create a resource group to host the virtual machines: DC-1 (Domain Contro
 
 <h2 align="center">Final Thoughts</h2> 
 
-In this lab, we deployed on-premises Active Directory in the cloud using Azure Virtual Machines. This foundational setup, including the creation of a Domain Controller (DC-1) and Client-1 VM with tested connectivity, establishing the basic infrastructure for simulating enterprise-level Active Directory in Azure.
+In this lab, we deployed On-premises Active Directory in the Cloud using Azure Virtual Machines. This foundational setup, including the creation of a Domain Controller (DC-1) and Client-1 VM with tested connectivity, establishing the basic infrastructure for simulating enterprise-level Active Directory in Azure.
 
 To continue building on this lab, check out the [next tutorial](https://github.com/vincentchachere/Active-Directory-Deployment-and-Configuration) within this series, where we’ll dive deeper into deploying, configuring, and expanding Active Directory functionality.
 
